@@ -8,7 +8,7 @@
 .container {
 	max-width: 1280px;
 	margin: 0 2%;
-	width: 100%;
+	width: 98%;
 }
 
 .portfolio__header {
@@ -37,7 +37,7 @@
 
 .portfolio__header__menu-toggle {
 	margin-right: 20px;
-	font-size: 23px;
+	font-size: 28px;
 }
 
 .portfolio__index {
@@ -76,6 +76,7 @@
 	padding: 20px 0;
 	font-size: 23px;
 	margin-top: 10px;
+	border: none;
 }
 
 
@@ -96,4 +97,30 @@
 	.container {
 		margin: 0 15px;
 	}
+}
+
+.portfolio__about {
+	width: 100%;
+	height: auto;
+}
+
+.portfolio__about__hat {
+	text-align:center;
+	margin: 15px 0;
+	font-size: 19px;
+}
+
+.portfolio__about__text {
+	font-size: 18px;
+}
+
+.portfolio__about__photo {
+	margin-top: 20px;
+	text-align: center;
+}
+.portfolio__about__photo img{
+	width: 70%;
+	border-radius: 100%;
+
+
 }
