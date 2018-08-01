@@ -85,7 +85,6 @@
 .portfolio__header__navigation {
 	z-index: 4;
     position: fixed;
-    top: 90px;
     transition: all ease .7s;
     width: 100%;
     height: calc(100vh - 90px);
