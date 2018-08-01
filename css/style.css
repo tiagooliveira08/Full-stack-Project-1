@@ -17,7 +17,7 @@
 
 .portfolio__header {
 	width: 100%;
-	height: 90px;
+	height: 110px;
 	background-color: white;
 	box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,.05);
 	display: flex;
@@ -27,7 +27,11 @@
 	justify-content: space-between;
 	position: fixed;
 	top: 0;
+	transition: height .4s ease;
 
+}
+.portfolio__header--scrolled {
+	height: 90px;
 }
 
 .portfolio__header--is-active {
@@ -39,17 +43,55 @@
 	margin-left: 20px;
 }
 
+.menu__toggle {
+	width: 50px;
+	height: 50px;
+	position: relative;
+
+}
+.menu__toggle__item {
+	width: 80%;
+	height: 5px;
+	border-radius: 3px;
+	background-color: black;
+	position: absolute;
+	transition: all .4s cubic-bezier(.25,.1,.61,1.39);
+}
+
+.menu-goggle__item--active .item__order__1 {
+	transform: rotate(45deg);
+	top: 50%;
+}
+.menu-goggle__item--active .item__order__2 {
+	transform: rotate(-45deg);
+	top: 50%;
+}
+.menu-goggle__item--active .item__order__3 {
+	transform: rotate(45deg);
+	top: 50%;
+}
+
+.item__order__1 {
+	top: 30%;
+}
+.item__order__2 {
+	top: 50%;
+}
+.item__order__3 {
+	top: 70%;
+}
 
 
 .portfolio__header__navigation {
 	z-index: 4;
     position: fixed;
-    top: 92px;
+    top: 90px;
     transition: all ease .7s;
     width: 100%;
     height: calc(100vh - 90px);
     background-color: white;
     left: -400%;
+    border-top: 2px solid #ccc;
 }
 .portfolio__header__navigation--active {
 	left: 0;
@@ -65,6 +107,7 @@
 
 .portfolio__header__menu-toggle {
 	padding: 20px;
+	padding-right: 10px;
 	font-size: 28px;
 }
 
@@ -165,4 +208,53 @@
 }
 .portfolio__specialties__list__item > i {
 	font-size: 25px;
+	margin-top: 10px;
+}
+
+.portfolio__services__container {
+	margin-top: 10px;
+}
+
+.portfolio__services__container__hat {
+	text-align: center;
+	font-size: 17px;
+	margin-top: 20px;
+
+	
+}
+
+.portfolio__services__container__title {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+
+.portfolio__services__container__hat:nth-child(1) {
+	margin-top: 10px;
+}
+
+.portfolio__services__list {
+	margin-top: 10px;
+}
+
+.portfolio__services__list__item {
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 10px;
+	text-indent: 20px;
+}
+.portfolio__services__list__item:nth-child(1) {
+	margin-top: 0;
+}
+
+.portfolio__footer {
+	width: 100%;
+	background-color: #FAFAFA;
+	height: 50px;
+	border-top: 1px solid #ccc;
+	margin-top: 10px;
+}
+.portfolio__footer__text {
+	margin: 40px 0;
+	text-align: center;
 }
