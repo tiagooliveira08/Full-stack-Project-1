@@ -29,4 +29,30 @@ $(function() {
 		}
 	})
 
+	//sistema slider
+
+	var currentSlider = 0;
+	var delay = 5;
+	var sliderCount = $(".current-slider").length -1;
+
+	initSlider();
+	changeSlider();
+
+	function initSlider() {
+		$(".current-slider").hide();
+		$(".current-slider").eq(0).show();
+	}
+
+	function changeSlider() {
+		setInterval(function() {
+			$(".current-slider").eq(currentSlider).stop().fadeOut(1000);
+			currentSlider++;
+			if(currentSlider > sliderCount) 
+				currentSlider = 0;
+			$(".current-slider").eq(currentSlider).stop().fadeIn(1000);
+			console.log(currentSlider);
+		},delay * 1000)
+	}
+
+
 });
