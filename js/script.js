@@ -7,7 +7,8 @@ $(function() {
 	var toggleheader = $(".portfolio__header");
 	var menuList = $(".portfolio__header__navigation");
 	var heightHeader;
-
+	var isActiver = false;
+	console.log(isActiver);
 
 	console.log($(toggleheader).offset().top);
 	var positionOfTop;
@@ -17,15 +18,19 @@ $(function() {
 		$(menuList).css("top",+heightHeader);
 		$(toggleList).toggleClass("portfolio__header__navigation--active");
 		$(toggleAnimation).toggleClass("menu-goggle__item--active");
+		isActiver = !isActiver;
+
 	});
 
 	$(window).scroll(function() {
 		positionOfTop = $(".portfolio__header").offset().top;
-		if(positionOfTop > 140) {
+		if(positionOfTop > 140 && isActiver != true) {
 			$(".portfolio__header").addClass("portfolio__header--scrolled");
+			$(".portfolio__header__navigation__list__item").addClass("portfolio__header__navigation__list__item--desktop");
 		}
 		else {
 			$(".portfolio__header").removeClass("portfolio__header--scrolled");
+			$(".portfolio__header__navigation__list__item").removeClass("portfolio__header__navigation__list__item--desktop");
 		}
 	})
 

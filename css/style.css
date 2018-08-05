@@ -266,3 +266,60 @@
 	margin: 40px 0;
 	text-align: center;
 }
+
+@media(min-width: 992px)  {
+	.portfolio__index__shadow__form__email_value {
+		width: 500px;
+	}
+	.portfolio__index__shadow__form form{
+		    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.portfolio__header__navigation {
+		position: relative;
+		width: 100%;
+		height: auto;
+		display: block;
+		left: unset;
+		border: none;
+	}
+	.portfolio__header__menu-toggle {
+		display: none;
+	}
+	.portfolio__header__navigation__list {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.portfolio__header__navigation__list__item {
+		display: inline-block;
+		padding: 44px 50px;
+		border: unset;
+
+	}
+	.portfolio__about__photo img{
+		width: 41%;
+	}
+	.portfolio__services__list {
+		list-style: none;
+	}
+	
+	.w-50 {
+		margin-top: 20px;
+		width: calc(50% - 30px);
+		display: inline-block;
+	}
+
+	.portfolio__specialties {
+		margin-top: 20px;
+	}
+
+	.portfolio__header__navigation__list__item--desktop {
+		padding: 34px 50px;
+	}
+
+	.portfolio__header .portfolio__header--scrolled {
+
+	}
+}
