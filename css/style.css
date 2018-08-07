@@ -288,6 +288,9 @@
 	.portfolio__header__menu-toggle {
 		display: none;
 	}
+	.portfolio__index__shadow__form__email_value {
+		text-align: center;
+	}
 	.portfolio__header__navigation__list {
 		display: flex;
 		justify-content: flex-end;

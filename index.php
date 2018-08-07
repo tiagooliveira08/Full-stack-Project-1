@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+		<?php 
+
+			include_once ('classes/PHPMailer/src/PHPMailer.php') ;
+			include_once ('classes/PHPMailer/src/SMTP.php') ;
+			include_once ('classes/PHPMailer/src/Exception.php') ;
+			
+		?>
 	<title>Projeto 1</title>
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 	<meta name="keywords" content="projeto,tiago,css,html,js,jquery,javascript,curso" />
@@ -12,8 +19,9 @@
 </head>
 <body>
 
+
 	<header class="portfolio__header">
-		<div class="portfolio__header_logo"><h1>LOGO</h1></div>
+		<div class="portfolio__header_logo"><h1>LOGO <?php new Email(); ?></h1></div>
 		<nav class="portfolio__header__navigation">
 			<ul class="portfolio__header__navigation__list">
 				<li class="portfolio__header__navigation__list__item">HOME</li>
