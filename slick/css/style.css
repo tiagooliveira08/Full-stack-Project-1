@@ -1,0 +1,25 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.modal-dialog {
+	width: 80%;
+}
+
+@media(min-width: 992px) {
+	.modal-dialog {
+		max-width: 992px !important;
+		height: 90vh;
+
+	}
+	.modal-dialog .modal-content {
+		height: 100%;
+	}
+
+	.modal-dialog  iframe{
+		width: 100% !important;
+		 height: 80vh;
+
+	}
+}
